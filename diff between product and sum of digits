@@ -1,0 +1,21 @@
+class Solution {
+public:
+    int subtractProductAndSum(int n) {
+         int r,prod=1,sum=0,diff=0;
+    
+    while(n>0)
+    {
+        r=n%10;
+        prod*=r;
+        sum+=r;
+        n=n/10;
+    }
+
+    diff=prod-sum;
+    cout<<"product = "<<prod<<endl;
+    cout<<"sum = "<<sum<<endl;
+    cout<<"difference of prod and sum = "<<" "<<diff;
+    return diff;
+        
+    }
+};
