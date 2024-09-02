@@ -1,0 +1,30 @@
+continue Statement ka Purpose:-
+continue statement ka use hum loops mein karte hain, jaise ki for, while, ya do-while loops. Jab continue statement loop ke andar use hota hai, toh uska kaam hota hai ki current 
+iteration (yaani current round)ko skip karke next iteration par jump kar jaye. Matlab, loop ke andar bachi hui code ko execute kiye bina, seedha agle round par chala jaye.
+
+
+switch Statement ka Context:-
+switch statement ek conditional control statement hai, jiska use hum specific cases ko handle karne ke liye karte hain, based on kisi variable ya expression ki value. 
+switch statement mein hum alag-alag casesdefine karte hain, aur break statement ka use karte hain taaki ek case ko complete karke switch statement se bahar aa jaye.
+
+
+continue ko switch mein Use Nahi Kar Sakte Kyun Ki:-
+1.switch loop nahi hota hai: continue ka logic loop ke andar kaam karta hai, kyunki continue ko pata hota hai ki uske baad loop ka agla iteration aayega.
+Lekin switch statement ek simple conditional branching hai,koi loop nahi hai. Isliye, continue ko yeh nahi pata ki uske baad kya karna hai switch ke andar.
+
+2.Ambiguity hoti hai: Agar switch statement ke andar continue ka use kiya jaye, toh yeh clear nahi hota ki continue kis context mein kaam karega. 
+Kya continue next case par jump karega? Ya phir switch se bahar nikal kar loop mein wapas jaayega (agar loop ho)? Yeh confusion create karta hai.
+
+3.Language Rules: C++ language ke rules ke hisaab se, continue sirf loops ke saath use ho sakta hai. Yeh syntax aur semantics ka part hai, jo language ke behavior ko define karta hai.
+
+
+Summary:-
+continue ko switch statement mein use nahi kar sakte kyunki switch ek conditional branching hota hai, loop nahi. continue ka kaam loop ke agle iteration par jump karna hota hai, lekin switch 
+statement mein aisa koi loop context nahi hota, isliye continue use nahi ho sakta. switch mein hum break ka use karte hain ek case ko khatam karne ke liye aur switch block se bahar nikalne ke liye.
+
+
+
+
+
+
+
