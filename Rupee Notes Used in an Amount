@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int amount,notes;
+    cout<<"Enter amount: ";
+    cin>>amount;
+    int ch;
+    cout<<"Enter choice: ";
+    cin>>ch;
+    switch(ch)
+    {
+        case 1: notes=amount/100;
+                amount=amount-(notes*100);
+                cout<<"number of 100 rupee notes used ar"<< notes<<endl;
+        
+        case 2: notes=amount/50;
+                amount=amount-(notes*50);
+                cout<<"number of 100 rupee notes used ar"<< notes<<endl;
+        
+        case 3: notes=amount/20;
+                amount=amount-(notes*20);
+                cout<<"number of 100 rupee notes used ar"<< notes<<endl;
+        
+        case 4: notes=amount/10;
+                amount=amount-(notes*10);
+                cout<<"number of 100 rupee notes used ar"<< notes<<endl;
+        default: cout<<"invalid option"<<endl;
+    }
+
+
+}
