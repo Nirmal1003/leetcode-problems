@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+// Function to print the binary representation of an integer
+void printBinary(int n) {
+    for (int i = 31; i >= 0; --i) {
+        // Right shift n by i and mask with 1 to get the i-th bit
+        int bit = (n >> i) & 1;
+        cout << bit;
+    }
+    cout << endl;
+}
+
+int main() {
+    int n;
+    cout << "Enter an integer (positive or negative): ";
+    cin >> n;
+
+    cout << "Binary representation: ";
+    printBinary(n);
+
+    return 0;
+}
