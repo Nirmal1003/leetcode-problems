@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int getMax(int arr[], int size)
+{
+
+    int max = INT8_MIN;                 // or int maxi =INT8_MIN
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i] > max)              // or we can directly use function    maxi=max(maxi,arr[i])
+            max = arr[i];
+    }
+    return max;
+}
+
+int getMin(int arr[], int size)
+{
+    int min = INT8_MAX;               // or int mini =INT8_MAX
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i] < min)            // or we can directly use function    mini=min(mini,arr[i])
+            min = arr[i];
+    }
+    return min;
+}
+
+int main()
+{
+    int arr[15];
+    int n;
+    cout << "Enter size : ";
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+    int max = getMax(arr, n);
+    int min = getMin(arr, n);
+
+    cout << "Maximum =" << max << endl;
+    cout << "Minimum =" << min << endl;
+}
